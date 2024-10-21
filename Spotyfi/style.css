@@ -1,0 +1,336 @@
+:root {
+    --bg-color: rgb(20, 20, 20);
+    --border-radius: 1rem;
+    --inner-bg-color: rgb(36, 35, 35);
+    --font-size: 1.25rem;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+}
+
+.sidebar {
+    background-color: black;
+    height: 100vh;
+    width: 340px;
+    border-radius: 1rem;
+}
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    margin: 0.2rem;
+    background-color: var(--bg-color);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    padding: 0.5rem 0.7rem;
+}
+
+.nav-option {
+    line-height: 2.5rem;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+    padding: 0rem 0.5rem;
+    cursor: pointer;
+}
+
+.nav-option:hover {
+    opacity: 1;
+}
+
+.librery {
+    height: 100%;
+    background-color: var(--bg-color);
+    border-radius: 1rem;
+    margin: 0.2rem;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0.7rem;
+}
+
+.lib-option,
+.lib-icon {
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.lib-option:hover,
+.lib-icon:hover {
+    opacity: 1;
+}
+
+.librery .lib-option img {
+    height: 1.25rem;
+    width: 1.25rem;
+    padding: 0rem 0.5rem;
+}
+
+.librery .lib-icon {
+    display: flex;
+}
+
+.lib-box .box {
+    border-radius: var(--border-radius);
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: var(--inner-bg-color);
+}
+
+.box .box-p1 {
+    font-size: var(--font-size);
+    line-height: 3rem;
+    font-weight: bold;
+}
+
+.box .box-p2 {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: normal;
+}
+
+.badge {
+    margin: 1.5rem 0rem 0.2rem 0rem;
+    font-size: 0.8;
+    font-weight: 800;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    border: none;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.badge:hover {
+    opacity: 1;
+}
+
+.sticky-nav {
+    height: 40px;
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    z-index: 10;
+}
+
+.sticky-nav-icon {
+    width: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sticky-nav-icon img {
+    background-color: black;
+    border-radius: 50%;
+    padding: 0.3rem;
+}
+
+.sticky-nav-option {
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sticky-nav-option .badge {
+    margin: 0%;
+}
+
+.sticky-nav-option .fa-user {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+
+.dark-badge {
+    background-color: black;
+    color: white;
+}
+
+.badge .fa-circle-down {
+    padding-right: 0.3rem;
+}
+
+.main_contant {
+    background-color: var(--bg-color);
+    height: 100vh;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0rem 1rem 0rem 1rem;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0%;
+}
+
+.main_contant h2 {
+    padding-left: 0.2rem;
+}
+
+.card {
+    background-color: var(--inner-bg-color);
+    width: 150px;
+    border-radius: var(--border-radius);
+    padding: 0.5rem;
+    margin: 0.2rem 1rem 0.2rem 0rem;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-info {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.footer {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 100%;
+    height: 40%;
+    border-top: 1px solid rgba(255, 255, 255, 0.219);
+}
+
+.music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.album {
+    width: 25%;
+}
+
+.player {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-control-image{
+    height: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.player-control-image:hover{
+    opacity: 1;
+}
+.control {
+    width: 25%;
+}
+
+
+.playback-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prograss-bar{
+    width: 70%;
+    height: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:780px) {
+    .unvisiable {
+        display: none;
+    }
+
+    .sticky-nav-option {
+        justify-content: flex-end;
+
+    }
+
+    .sticky-nav-option .dark-badge {
+        margin-right: 2px;
+    }
+
+    .sticky-nav-icon .farward-icon {
+        display: none;
+    }
+}
+
+@media (max-width:580px) {
+    .main_contant {
+        min-width: 240px;
+    }
+
+    .lib-box .box .box-p1 {
+        font-size: medium;
+    }
+}

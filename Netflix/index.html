@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./assets/pngwing.com.png" />
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+</head>
+
+<body>
+    <div class="background-poster">
+        <div class="background-darken"></div>
+    </div>
+    <div class="header-container">
+        <header class="header">
+            <div class="header-logo">
+                <img src="./assets/netflix_logo.png" alt="">
+            </div>
+            <div class="header-option">
+                <div class="filter-language">
+                    <!-- Dropdown for Language -->
+                    <select class="language">
+                        <option value="English" selected>English</option>
+                        <option value="Hindi">Hindi</option>
+                    </select>
+                </div>
+                <div class="header-sign-in">
+                    <p class="button">Sign in</p>
+                </div>
+            </div>
+
+        </header>
+        <div class="poster-text">
+            <div class="poster-title">
+                <h1>Unlimited movies, TV shows and more</h1>
+            </div>
+            <div class="poster-info">
+                Starts at 149. Cancel at any time.
+            </div>
+            <div class="para">
+                Ready to watch? Enter your email to create or restart your membership.
+            </div>
+            <div class="poster-form">
+                <form action="#">
+                    <input type="email" placeholder="Email address" class="email-box">
+                    <button type="submit" class="btn">Get Started <i class="fa-solid fa-angle-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="main-contant">
+        <h2>Trending Now</h2>
+        <div class="filter-container">
+            <!-- Dropdown 1: Country -->
+            <select class="dropdown">
+                <option value="India">India</option>
+                <option value="Global">Global</option>
+            </select>
+
+            <!-- Dropdown 2: Content Type -->
+            <select class="dropdown">
+                <option value="Movies">Movies</option>
+                <option value="TV Shows">TV Shows</option>
+            </select>
+        </div>
+        <div class="card-container-poster">
+            <div class="left-btn" onclick="sliderReverse()">&lt;</div>
+            <div class="main-cont">
+
+                <div class="badgh-container" id="slider-cont">
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./assets/1.jpeg" alt="">
+                        </div>
+                        <div class="card-badgh">
+                            <img src="./assets/pngwing.com.png" alt="">
+                        </div>
+                        <div class="trending-badgh">
+                            <img src="./assets/trending_logo/Picture1.png" alt="">
+                        </div>
+                        <div class="recent-badgh">Recently added</div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./assets/2.jpg" alt="">
+                        </div>
+                        <div class="card-badgh">
+                            <img src="./assets/pngwing.com.png" alt="">
+                        </div>
+                        <div class="trending-badgh">
+                            <img src="./assets/trending_logo/Picture2.png" alt="">
+                        </div>
+                        <div class="recent-badgh">Recently added</div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./assets/3.jpg" alt="">
+                        </div>
+                        <div class="card-badgh">
+                            <img src="./assets/pngwing.com.png" alt="">
+                        </div>
+                        <div class="trending-badgh">
+                            <img src="./assets/trending_logo/Picture3.png" alt="">
+                        </div>
+                        <div class="recent-badgh">Recently added</div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./assets/4.jpg" alt="">
+                        </div>
+                        <div class="card-badgh">
+                            <img src="./assets/pngwing.com.png" alt="">
+                        </div>
+                        <div class="trending-badgh">
+                            <img src="./assets/trending_logo/Picture4.png" alt="">
+                        </div>
+                        <div class="recent-badgh">Recently added</div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./assets/5.jpg" alt="">
+                        </div>
+                        <div class="card-badgh">
+                            <img src="./assets/pngwing.com.png" alt="">
+                        </div>
+                        <div class="trending-badgh">
+                            <img src="./assets/trending_logo/Picture5.png" alt="">
+                        </div>
+                        <div class="recent-badgh">Recently added</div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./assets/6.jpg" alt="">
+                        </div>
+                        <div class="card-badgh">
+                            <img src="./assets/pngwing.com.png" alt="">
+                        </div>
+                        <div class="trending-badgh">
+                            <img src="./assets/trending_logo/Picture6.png" alt="">
+                        </div>
+                        <div class="recent-badgh">Recently added</div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./assets/7.jpg" alt="">
+                        </div>
+                        <div class="card-badgh">
+                            <img src="./assets/pngwing.com.png" alt="">
+                        </div>
+                        <div class="trending-badgh">
+                            <img src="./assets/trending_logo/Picture7.png" alt="">
+                        </div>
+                        <div class="recent-badgh">Recently added</div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./assets/8.jpg" alt="">
+                        </div>
+                        <div class="card-badgh">
+                            <img src="./assets/pngwing.com.png" alt="">
+                        </div>
+                        <div class="trending-badgh">
+                            <img src="./assets/trending_logo/Picture8.png" alt="">
+                        </div>
+                        <div class="recent-badgh">Recently added</div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./assets/9.jpg" alt="">
+                        </div>
+                        <div class="card-badgh">
+                            <img src="./assets/pngwing.com.png" alt="">
+                        </div>
+                        <div class="trending-badgh">
+                            <img src="./assets/trending_logo/Picture9.png" alt="">
+                        </div>
+                        <div class="recent-badgh">Recently added</div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./assets/9.jpg" alt="">
+                        </div>
+                        <div class="card-badgh">
+                            <img src="./assets/pngwing.com.png" alt="">
+                        </div>
+                        <div class="trending-badgh">
+                            <img src="./assets/trending_logo/Picture10.png" alt="">
+                        </div>
+                        <div class="recent-badgh">Recently added</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right-btn" onclick="sliderfarward()">&gt;</div>
+        </div>
+        <h4>More reasons to join</h4>
+        <div class="joining-reasons">
+            <div class="join-card">
+                <div class="join-card-title">
+                    <h3>Enjoy on your TV</h3>
+                </div>
+                <div class="join-card-para">
+                    Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+                </div>
+                <div class="join-card-img">
+                    <i class="fa-solid fa-computer"></i>
+                </div>
+            </div>
+            <div class="join-card">
+                <div class="join-card-title">
+                    <h3>Download your shows to watch offline</h3>
+                </div>
+                <div class="join-card-para">
+                    Save your favourites easily and always have something to watch.
+                </div>
+                <div class="join-card-img">
+                    <i class="fa-solid fa-download"></i>
+                </div>
+            </div>
+            <div class="join-card">
+                <div class="join-card-title">
+                    <h3>Watch everywhere</h3>
+                </div>
+                <div class="join-card-para">
+                    Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.
+                </div>
+                <div class="join-card-img">
+                    <i class="fa-solid fa-wand-sparkles"></i>
+                </div>
+            </div>
+            <div class="join-card">
+                <div class="join-card-title">
+                    <h3>Create profiles for kids</h3>
+                </div>
+                <div class="join-card-para">
+                    Send kids on adventures with their favourite characters in a space made just for them — free
+                    with
+                    your membership.
+                </div>
+                <div class="join-card-img">
+                    <i class="fa-regular fa-address-card"></i>
+                </div>
+            </div>
+        </div>
+        <div class="frequently-asked-question">
+            <h4>Frequently Asked Questions</h4>
+            <div class="boxes">
+                <div class="box-1" onclick="togglehide1()">
+                    <span class="box-questions">What is Netflix?</span>
+                    <button class="hide-btn"><span class="expaind-plus-icon"><i
+                                class="fa-solid fa-plus"></i></span></button>
+                </div>
+                <div class="box-2 box-1" id="container1">
+                    <p class="box-2-para">Netflix is a streaming service that offers a wide variety of award-winning TV
+                        shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+                    </p>
+                    <p class="box-2-para">
+                        You can watch as much as you want, whenever you want, without a single ad – all for one low
+                        monthly price. There's always something new to discover, and new TV shows and movies are added
+                        every week!
+                    </p>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box-1" onclick="togglehide2()">
+                    <span class="box-questions">What is Netflix?</span>
+                    <button class="hide-btn"><span class="expaind-plus-icon"><i
+                                class="fa-solid fa-plus"></i></span></button>
+                </div>
+                <div class="box-2 box-1" id="container2">
+                    <p class="box-2-para">Netflix is a streaming service that offers a wide variety of award-winning TV
+                        shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+                    </p>
+                    <p class="box-2-para">
+                        You can watch as much as you want, whenever you want, without a single ad – all for one low
+                        monthly price. There's always something new to discover, and new TV shows and movies are added
+                        every week!
+                    </p>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box-1" onclick="togglehide3()">
+                    <span class="box-questions">What is Netflix?</span>
+                    <button class="hide-btn"><span class="expaind-plus-icon"><i
+                                class="fa-solid fa-plus"></i></span></button>
+                </div>
+                <div class="box-2 box-1" id="container3">
+                    <p class="box-2-para">Netflix is a streaming service that offers a wide variety of award-winning TV
+                        shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+                    </p>
+                    <p class="box-2-para">
+                        You can watch as much as you want, whenever you want, without a single ad – all for one low
+                        monthly price. There's always something new to discover, and new TV shows and movies are added
+                        every week!
+                    </p>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box-1" onclick="togglehide4()">
+                    <span class="box-questions">What is Netflix?</span>
+                    <button class="hide-btn"><span class="expaind-plus-icon"><i
+                                class="fa-solid fa-plus"></i></span></button>
+                </div>
+                <div class="box-2 box-1" id="container4">
+                    <p class="box-2-para">Netflix is a streaming service that offers a wide variety of award-winning TV
+                        shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+                    </p>
+                    <p class="box-2-para">
+                        You can watch as much as you want, whenever you want, without a single ad – all for one low
+                        monthly price. There's always something new to discover, and new TV shows and movies are added
+                        every week!
+                    </p>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box-1" onclick="togglehide5()">
+                    <span class="box-questions">What is Netflix?</span>
+                    <button class="hide-btn"><span class="expaind-plus-icon"><i
+                                class="fa-solid fa-plus"></i></span></button>
+                </div>
+                <div class="box-2 box-1" id="container5">
+                    <p class="box-2-para">Netflix is a streaming service that offers a wide variety of award-winning TV
+                        shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+                    </p>
+                    <p class="box-2-para">
+                        You can watch as much as you want, whenever you want, without a single ad – all for one low
+                        monthly price. There's always something new to discover, and new TV shows and movies are added
+                        every week!
+                    </p>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box-1" onclick="togglehide6()">
+                    <span class="box-questions">What is Netflix?</span>
+                    <button class="hide-btn" id="plus-btn"><span class="expaind-plus-icon"><i
+                                class="fa-solid fa-plus"></i></span></button>
+                </div>
+                <div class="box-2 box-1" id="container6">
+                    <p class="box-2-para">Netflix is a streaming service that offers a wide variety of award-winning TV
+                        shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+                    </p>
+                    <p class="box-2-para">
+                        You can watch as much as you want, whenever you want, without a single ad – all for one low
+                        monthly price. There's always something new to discover, and new TV shows and movies are added
+                        every week!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="poster-text" style="color: white; margin: 50px 0px; width: 100%; height: fit-content;">
+            <div class="para">
+                Ready to watch? Enter your email to create or restart your membership.
+            </div>
+            <div class="poster-form">
+                <form action="#">
+                    <input type="email" placeholder="Email address" class="email-box"
+                        style="width: 420px; margin-bottom: 10px;">
+                    <button type="submit" class="btn">Get Started <i class="fa-solid fa-angle-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="para ">
+            <p style="font-weight: 500; opacity: 0.7; font-size: 1rem;">Questions? Call <u>000-800-919-1694</u></p>
+        </div>
+        <div class="footer-container">
+            <div class="footer-element">
+                <p class="para foot-link">FAQ</p>
+                <p class="para foot-link">Help Centre</p>
+                <p class="para foot-link">Investor Relatons</p>
+                <p class="para foot-link">Account</p>
+                <p class="para foot-link">Media Centre</p>
+                <p class="para foot-link">Ways to Watch</p>
+                <p class="para foot-link">Jobs</p>
+                <p class="para foot-link">Terms of Use</p>
+                <p class="para foot-link">Privacy</p>
+                <p class="para foot-link">Coocie Preferences</p>
+                <p class="para foot-link">Corporate Information</p>
+                <p class="para foot-link">Contact Us</p>
+                <p class="para foot-link">Speet Test</p>
+                <p class="para foot-link">Legal Notices</p>
+                <p class="para foot-link">Only on Netflix</p>
+            </div>
+        </div>
+        <div class="filter-language" style="margin:30px 0px;">
+            <!-- Dropdown for Language -->
+            <select class="language">
+                <option value="English" selected>English</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+        </div>
+        <div style="border-bottom: 1px solid white; margin-bottom: 30px; opacity: 0.7; font-size: 0.9rem;">
+            <p class="para" style="margin-bottom: 1rem;">Netflix India</p>
+        </div>
+        <script src="script.js"></script>
+    </div>
+
+</html>

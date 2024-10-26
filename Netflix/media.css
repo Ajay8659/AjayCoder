@@ -1,0 +1,132 @@
+@media (max-width:600px) {
+    .email-box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .header-logo img {
+        height: 40px;
+    }
+
+    .poster-text {
+        margin-top: 19%;
+    }
+
+    .poster-title {
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+
+    .main-contant {
+        margin: 0px 30px;
+    }
+
+    .filter-container {
+        justify-content: flex-start;
+    }
+
+    .card-img {
+        width: 175px;
+        height: 240px;
+    }
+
+    .cards {
+        height: 200px;
+        width: 135px;
+
+    }
+
+    .recent-badgh {
+        font-size: 10px;
+    }
+
+    .trending-badgh img {
+        height: 110px;
+    }
+    .card-badgh img {
+        height: 20px;
+    }
+
+    .card-img img {
+        height: 200px;
+        width: 135px;
+    }
+    .joining-reasons {
+        color: white;
+        display: block;
+    }
+    .join-card {
+        display: block;
+        border-radius: 10px;
+        background-image: linear-gradient(to right, rgb(29, 29, 146), rgb(168, 41, 69));
+        margin-top: 5px;
+        width: 100%;
+    
+    }
+}
+
+@media (600px <=width <=1150px) {
+    .poster-title {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+    .poster-text {
+        margin-top: 10%;
+    }
+
+    .filter-container {
+        justify-content: flex-start;
+    }
+
+    .card-img {
+        width: 175px;
+        height: 240px;
+    }
+
+    .cards {
+        height: 200px;
+        width: 135px;
+
+    }
+
+    .recent-badgh {
+        font-size: 10px;
+    }
+
+    .trending-badgh img {
+        height: 110px;
+    }
+    .card-badgh img {
+        height: 20px;
+    }
+
+    .card-img img {
+        height: 200px;
+        width: 135px;
+    }
+}
+
+
+@media (600px <=width <=860px) {
+    .main-contant {
+        margin: 0px 50px;
+    }
+
+    .filter-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .joining-reasons {
+        color: white;
+        display: block;
+    }
+    .join-card {
+        border-radius: 10px;
+        background-image: linear-gradient(to right, rgb(29, 29, 146), rgb(168, 41, 69));
+        margin-top: 5px;
+        width: 100%;
+    
+    }
+}

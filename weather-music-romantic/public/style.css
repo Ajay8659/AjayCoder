@@ -1,0 +1,53 @@
+body {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background: #fceef2;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #ffb6c1;
+  border: none;
+}
+
+.sunny {
+  background-image: url('images/sunny.jpg');
+  background-size: cover;
+}
+
+.rain {
+  background-image: url('images/rain.jpg');
+  background-size: cover;
+}
+
+.cloudy {
+  background-image: url('images/cloudy.jpg');
+  background-size: cover;
+}
+
+/* Adding gradient backgrounds for different weather conditions */
+.sunny {
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 89%);
+  background-size: cover;
+  height: 100vh;
+  /* Yellow to Orange */
+}
+
+.rain {
+  background: linear-gradient(to top right, #00416a, #e4e5e6);
+  background-size: cover;
+  height: 100vh;
+  /* Dark Blue to Light Grey */
+}
+
+.cloudy {
+  background: linear-gradient(to top right, #b0bec5, #cfd8dc);
+  background-size: cover;
+  height: 100vh;
+  /* Light Grey to Light Blue */
+}
